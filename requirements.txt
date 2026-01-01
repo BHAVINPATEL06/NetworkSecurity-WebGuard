@@ -1,3 +1,9 @@
 python-dotenv
 pandas
-nump
+numpy
+pymongo
+certifi
+
+## This -e . will refer to the setup.py file in the current directory
+## Write this at the last of the project while deploying
+# -e .
