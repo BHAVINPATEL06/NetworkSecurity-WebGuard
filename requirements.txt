@@ -3,6 +3,8 @@ pandas
 numpy
 pymongo
 certifi
+pymongo[srv]==3.12
+pymongo
 
 ## This -e . will refer to the setup.py file in the current directory
 ## Write this at the last of the project while deploying
