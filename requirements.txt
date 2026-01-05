@@ -6,6 +6,8 @@ certifi
 pymongo[srv]>=4.6
 pymongo
 scikit-learn
+pyaml
+dill
 
 ## This -e . will refer to the setup.py file in the current directory
 ## Write this at the last of the project while deploying
