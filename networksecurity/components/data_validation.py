@@ -123,6 +123,7 @@ class DataValidation:
             train_dataframe.to_csv(self.data_validation_config.valid_train_file_path,index=False,header=True)
             test_dataframe.to_csv(self.data_validation_config.valid_test_file_path,index=False,header=True)
 
+            ## returning the DataValidationArtifact object
             data_validation_artifact = DataValidationArtifact(
                 validation_status = status,
                 valid_train_file_path = self.data_ingestion_artifact.trained_file_path,
