@@ -8,6 +8,9 @@ pymongo
 scikit-learn
 pyaml
 mlflow
+dagshub
+fastapi
+uvicorn
 
 ## This -e . will refer to the setup.py file in the current directory
 ## Write this at the last of the project while deploying

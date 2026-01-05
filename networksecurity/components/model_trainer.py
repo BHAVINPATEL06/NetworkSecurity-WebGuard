@@ -21,6 +21,10 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import AdaBoostClassifier,GradientBoostingClassifier,RandomForestClassifier
 from sklearn.metrics import r2_score
 
+import dagshub
+dagshub.init(repo_owner='bhavinpatel242846', repo_name='NetworkSecurity', mlflow=True)
+
+
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
         try:
@@ -107,8 +111,10 @@ class ModelTrainer:
             ## Network Model also does the prediction 
             Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
             save_object(self.model_trainer_config.trained_model_file_path,obj=NetworkModel)
+
+
             #model pusher
-            # save_object("final_model/model.pkl",best_model)
+            save_object("final_models/model.pkl",best_model)
         
 
             ## Model Trainer Artifact
