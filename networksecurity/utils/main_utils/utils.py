@@ -3,7 +3,6 @@ import os,sys
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 import numpy as np
-import dill
 import pickle
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import r2_score
