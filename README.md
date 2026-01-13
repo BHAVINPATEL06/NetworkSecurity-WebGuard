@@ -1,4 +1,4 @@
-# 🛡️ Network Security ML Project 🛡️
+# 🛡️ Network Security (WebGuard) ML Project 🛡️
 
 ## 📋 Overview
 This project is a complete end-to-end machine learning pipeline for network security analysis built during Krish Naik's Machine Learning Bootcamp. It uses advanced ML techniques to detect and classify network security threats from network data.
@@ -144,3 +144,4 @@ The project integrates with MLflow and DagsHub for experiment tracking:
 6. 🏆 The best model is selected based on performance metrics
 7. 💾 The model is saved for deployment
 8. 🚀 The model is served via a FastAPI application
+
